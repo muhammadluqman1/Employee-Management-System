@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>calculate payroll</description>
+        <field>sys_class_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>calculate Final amount</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    //Type appropriate comment here, and begin script below
+    var final_amount = 0;
+    var employee_object = g_form.getReference('employee_ref', callback);
+
+    function callback(employee_object) {
+        var total_hours = 160;
+        var miss_hours = g_form.getValue('missing_hours');
+        var employee_salary = employee_object.employee_salary;
+        var per_hour_amount = employee_salary / 160;
+        var deduct_amount = miss_hours * per_hour_amount;
+        var final_amount = employee_salary - deduct_amount;
+        g_form.setValue('final_amount',final_amount);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 13:01:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>549f745b871001105880206f8bbb351a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>calculate Final amount</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_update_name>sys_script_client_549f745b871001105880206f8bbb351a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 13:42:31</sys_updated_on>
+        <table>x_715443_employee_pay_roll</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Management System">25b9b017871001105880206f8bbb3595</application>
+        <file_path/>
+        <instance_id>47ccb63bdb621380b2e05d00cf961963</instance_id>
+        <instance_name>dev61296</instance_name>
+        <name>sys_script_client_549f745b871001105880206f8bbb351a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;calculate payroll&lt;/description&gt;&lt;field&gt;sys_class_name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;calculate Final amount&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    //Type appropriate comment here, and begin script below
+    var final_amount = 0;
+    var employee_object = g_form.getReference('employee_ref', callback);
+
+    function callback(employee_object) {
+        var total_hours = 160;
+        var miss_hours = g_form.getValue('missing_hours');
+        var employee_salary = employee_object.employee_salary;
+        var per_hour_amount = employee_salary / 160;
+        var deduct_amount = miss_hours * per_hour_amount;
+        var final_amount = employee_salary - deduct_amount;
+        g_form.setValue('final_amount',final_amount);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-12-13 13:01:48&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;549f745b871001105880206f8bbb351a&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;calculate Final amount&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Management System" source="x_715443_employee"&gt;25b9b017871001105880206f8bbb3595&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Management System"&gt;25b9b017871001105880206f8bbb3595&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_549f745b871001105880206f8bbb351a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-12-13 13:42:31&lt;/sys_updated_on&gt;&lt;table&gt;x_715443_employee_pay_roll&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1946499010</payload_hash>
+        <record_name>calculate Final amount</record_name>
+        <reverted_from/>
+        <source>a5b9b017871001105880206f8bbb3597</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 13:42:31</sys_created_on>
+        <sys_id>360ac553875001105880206f8bbb3581</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17db407d4340000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 13:42:31</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>3a0acd1325500110e80d00f2915ff195</update_guid>
+        <update_guid_history>3a0acd1325500110e80d00f2915ff195:1946499010,77690913b55001107b12bd2a914b33f8:-481380242,992989136a500110cf2afb14d0461aaf:621198843,4be8899f2d1001101e50feed8a203be0:299902762,44a88ddf3d10011040dbaca8e5a55021:-41892594,0c1841dfc7100110e9ea4b58a26ac1ba:-1764502575,db36419f63100110f121325312c62af5:-1241076105,8dc58d5f5b1001100f111518817e3b3d:197954045,9115455fcb100110514388e607d1775a:267379531,2ec48ddb73100110c4c648b904271447:-1440168629,666381db64100110fc81d21bb97cc549:-1912526914,ccf2c55bed1001106f44227221ff6d9f:-1203769534,9eb0819b5210011018a811a8ab1234c1:1917125473</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 13:45:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>382e0df4fa384b7086c9f9f48118e900</sys_id>
+        <sys_metadata>549f745b871001105880206f8bbb351a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>calculate Final amount</sys_name>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_parent display_value="Pay roll">e67a3057871001105880206f8bbb35e2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_scope_delete display_value="">0f722ba6f66d43a5946975d0e0d2c3b1</sys_scope_delete>
+        <sys_update_name>sys_script_client_549f745b871001105880206f8bbb351a</sys_update_name>
+        <sys_update_version display_value="sys_script_client_549f745b871001105880206f8bbb351a">360ac553875001105880206f8bbb3581</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 13:45:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
