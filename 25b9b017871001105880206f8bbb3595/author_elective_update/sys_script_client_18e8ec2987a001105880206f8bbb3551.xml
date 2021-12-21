@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>employee_salary</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>authorized employee salary</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	if(parseInt(newValue)==0)
+		{
+			g_form.addErrorMessage('Enter Correct Salary');
+		}
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-20 11:06:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18e8ec2987a001105880206f8bbb3551</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>authorized employee salary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_update_name>sys_script_client_18e8ec2987a001105880206f8bbb3551</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-20 11:13:27</sys_updated_on>
+        <table>x_715443_employee_employee</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Management System">25b9b017871001105880206f8bbb3595</application>
+        <file_path/>
+        <instance_id>47ccb63bdb621380b2e05d00cf961963</instance_id>
+        <instance_name>dev61296</instance_name>
+        <name>sys_script_client_18e8ec2987a001105880206f8bbb3551</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;employee_salary&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;authorized employee salary&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	if(parseInt(newValue)==0)
+		{
+			g_form.addErrorMessage('Enter Correct Salary');
+		}
+   //Type appropriate comment here, and begin script below
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-12-20 11:06:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;18e8ec2987a001105880206f8bbb3551&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;authorized employee salary&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Management System" source="x_715443_employee"&gt;25b9b017871001105880206f8bbb3595&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Management System"&gt;25b9b017871001105880206f8bbb3595&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_18e8ec2987a001105880206f8bbb3551&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-12-20 11:13:27&lt;/sys_updated_on&gt;&lt;table&gt;x_715443_employee_employee&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>694481854</payload_hash>
+        <record_name>authorized employee salary</record_name>
+        <reverted_from/>
+        <source>895116fb871001105880206f8bbb35e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-20 11:13:27</sys_created_on>
+        <sys_id>d70be0a987a001105880206f8bbb350b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17dd78bdc320000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-20 11:13:27</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>df0be0a9dba00110df23858403876f0a</update_guid>
+        <update_guid_history>df0be0a9dba00110df23858403876f0a:694481854,566a28e509a001106edb7c6fcb01b545:-504774471,e22a286985a0011020ef503a2c15b041:1758273653,2089646568a00110fe5e33a49e223686:800784649</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-20 11:26:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>67628021412b4850a344d0f1a20ca900</sys_id>
+        <sys_metadata>18e8ec2987a001105880206f8bbb3551</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>authorized employee salary</sys_name>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_parent display_value="Employee">db2a3c17871001105880206f8bbb35e2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_scope_delete display_value="">0f722ba6f66d43a5946975d0e0d2c3b1</sys_scope_delete>
+        <sys_update_name>sys_script_client_18e8ec2987a001105880206f8bbb3551</sys_update_name>
+        <sys_update_version display_value="sys_script_client_18e8ec2987a001105880206f8bbb3551">d70be0a987a001105880206f8bbb350b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-20 11:26:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

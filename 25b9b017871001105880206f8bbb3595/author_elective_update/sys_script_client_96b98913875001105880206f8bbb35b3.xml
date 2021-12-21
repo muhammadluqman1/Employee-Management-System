@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>missing_hours</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>authorize missing value field</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+	if(newValue>=160)
+		{
+			g_form.addErrorMessage('Missing hours must be less then 160');
+		}
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 13:42:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>96b98913875001105880206f8bbb35b3</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>authorize missing value field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_update_name>sys_script_client_96b98913875001105880206f8bbb35b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-20 10:38:42</sys_updated_on>
+        <table>x_715443_employee_employee</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Management System">25b9b017871001105880206f8bbb3595</application>
+        <file_path/>
+        <instance_id>47ccb63bdb621380b2e05d00cf961963</instance_id>
+        <instance_name>dev61296</instance_name>
+        <name>sys_script_client_96b98913875001105880206f8bbb35b3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;missing_hours&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;authorize missing value field&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+	if(newValue&gt;=160)
+		{
+			g_form.addErrorMessage('Missing hours must be less then 160');
+		}
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-12-13 13:42:38&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;96b98913875001105880206f8bbb35b3&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;authorize missing value field&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Management System" source="x_715443_employee"&gt;25b9b017871001105880206f8bbb3595&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Management System"&gt;25b9b017871001105880206f8bbb3595&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_96b98913875001105880206f8bbb35b3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-12-20 10:38:42&lt;/sys_updated_on&gt;&lt;table&gt;x_715443_employee_employee&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1245415045</payload_hash>
+        <record_name>authorize missing value field</record_name>
+        <reverted_from/>
+        <source>895116fb871001105880206f8bbb35e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-20 10:38:42</sys_created_on>
+        <sys_id>921324e187a001105880206f8bbb358b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17dd76c0c2e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-20 10:38:42</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>9a1324e1cda001107a2230dca0c6208a</update_guid>
+        <update_guid_history>9a1324e1cda001107a2230dca0c6208a:-1245415045,9fe22ca155a0011080fe14e7dbf793cb:1522572396,20db7f55ce2001109a283fef99ebf58e:-797545517,97e6fa7f8390011009bd585787ac3baf:-371673338,d126b63ff89001107f5ef7b52a969d31:258479398,8c653a3f569001102cf0f743a4c15ec9:1639171426,5ae17a7b39900110b31b03c86080143c:1970197881,51b13a7b559001108128672ad7fa71d6:1639171426,2c331eb30050011021adee735c5aef1f:-1405169892,ddd2d2732b500110e0b226b1e2f7aee7:-1028405718,d403e157f0900110372d6d70e5a69f02:-1405169892,3fd0a5d345900110decca1b3b03fac82:-260587819,2970a993de900110ea8c9370aec1ef87:-1318062424,fe3f11939d900110660e49db26832adf:-1292645329,c63c15df4150011040a2845d16d4617e:-1561678489,5ed91d1b3f5001106e5bafd5f1445b0a:1295521428,1b1219177a50011055739de945840999:-1934596053,050b0953ad5001104896e8ca7785b53b:-1405169892,5dca4d538350011025b929bf9cd21590:-1864997109,d96ac553e4500110391ed96f3b6bc388:-1138451081,a41ac553b0500110001012f8a32162f3:1959893177</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-20 11:27:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>505116c7b8854e619dfec3f3097dc459</sys_id>
+        <sys_metadata>96b98913875001105880206f8bbb35b3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>authorize missing value field</sys_name>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_parent display_value="Employee">db2a3c17871001105880206f8bbb35e2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_scope_delete display_value="">0f722ba6f66d43a5946975d0e0d2c3b1</sys_scope_delete>
+        <sys_update_name>sys_script_client_96b98913875001105880206f8bbb35b3</sys_update_name>
+        <sys_update_version display_value="sys_script_client_96b98913875001105880206f8bbb35b3">921324e187a001105880206f8bbb358b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-20 11:27:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
