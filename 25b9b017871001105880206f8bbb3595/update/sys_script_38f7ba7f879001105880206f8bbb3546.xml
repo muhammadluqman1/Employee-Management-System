@@ -48,14 +48,14 @@
 
     var payroll = new GlideRecord('x_715443_employee_pay_roll');
     payroll.initialize();
-    payroll.employeeid = current.number;
+    payroll.employeeid = current.sys_id;
     payroll.final_amount = final_amount;
     payroll.insert();
 
     var employee = new GlideRecord('x_715443_employee_employee');
     employee.query();
     employee.next();
-    employee.setValue('payroll_id', payroll.number);
+    employee.setValue('payroll_id', payroll.sys_id);
     employee.update();
 
     gs.info("Data inserted successfully" + current.payroll_id);
@@ -67,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>38f7ba7f879001105880206f8bbb3546</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>adding new field in  payroll</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
@@ -75,7 +75,7 @@
         <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
         <sys_update_name>sys_script_38f7ba7f879001105880206f8bbb3546</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-12-21 07:20:32</sys_updated_on>
+        <sys_updated_on>2021-12-22 07:54:53</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

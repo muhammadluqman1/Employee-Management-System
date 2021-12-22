@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	g_form.setReadOnly('payroll_id', 'true');
+  glide.ui.reference.readonly.clickthrough == 'true';
+}]]></script_true>
+        <set_values/>
+        <short_description>Reference Field Read only with info button is active</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-22 07:07:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dde24ac22f600110fbf6b8e72799b63f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Reference Field Read only with info button is active</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_update_name>sys_ui_policy_dde24ac22f600110fbf6b8e72799b63f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-22 07:28:57</sys_updated_on>
+        <table>x_715443_employee_employee</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

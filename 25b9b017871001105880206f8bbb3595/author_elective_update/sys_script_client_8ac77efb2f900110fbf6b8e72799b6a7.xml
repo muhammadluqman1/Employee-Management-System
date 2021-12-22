@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Insert Paroll into Employee table</description>
+        <field>sys_class_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>insert payroll in employee table</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	
+var gr = new GlideRecord('x_715443_employee_pay_roll');
+gr.query();
+while(gr.next()){
+alert("hello");
+var gr1 = new GlideRecord('x_715443_employee_employee');
+gr1.initialize();
+g_form.setValue('final_payroll', gr.final_amount);
+
+gr1.insert();
+
+ 
+
+}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-15 11:06:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ac77efb2f900110fbf6b8e72799b6a7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>insert payroll in employee table</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_update_name>sys_script_client_8ac77efb2f900110fbf6b8e72799b6a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-15 11:34:00</sys_updated_on>
+        <table>x_715443_employee_employee</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Management System">25b9b017871001105880206f8bbb3595</application>
+        <file_path/>
+        <instance_id>396ac553dbd7d3044f035d00cf9619b8</instance_id>
+        <instance_name>dev65905</instance_name>
+        <name>sys_script_client_8ac77efb2f900110fbf6b8e72799b6a7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Insert Paroll into Employee table&lt;/description&gt;&lt;field&gt;sys_class_name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;insert payroll in employee table&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	
+var gr = new GlideRecord('x_715443_employee_pay_roll');
+gr.query();
+while(gr.next()){
+alert("hello");
+var gr1 = new GlideRecord('x_715443_employee_employee');
+gr1.initialize();
+g_form.setValue('final_payroll', gr.final_amount);
+
+gr1.insert();
+
+ 
+
+}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-12-15 11:06:53&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8ac77efb2f900110fbf6b8e72799b6a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;insert payroll in employee table&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Management System" source="x_715443_employee"&gt;25b9b017871001105880206f8bbb3595&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Management System"&gt;25b9b017871001105880206f8bbb3595&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_8ac77efb2f900110fbf6b8e72799b6a7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-12-15 11:34:00&lt;/sys_updated_on&gt;&lt;table&gt;x_715443_employee_employee&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-788035481</payload_hash>
+        <record_name>insert payroll in employee table</record_name>
+        <reverted_from/>
+        <source>95f1fa732f100110fbf6b8e72799b6af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-15 11:34:00</sys_created_on>
+        <sys_id>e3cffa732fd00110fbf6b8e72799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17dbddee08a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-15 11:34:00</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>2fcffa7368d00110623e174247a0977a</update_guid>
+        <update_guid_history>2fcffa7368d00110623e174247a0977a:-788035481,f73f7affd490011009fc8856ae606ff5:165738906,0d7cf6ff5790011051c1327241f1cc4a:266864720,484cb6fffb900110ebde2dc05d821bcb:-656212255,d50bf6bf65900110df5e355c82e16ead:533554466,829a72bff2900110218b95b6eaaff6f3:-94386203,a66af27f239001107906a5fd6aeb4cb4:2007728422,3d4a3e7ff690011076c60ea7d33798e4:191779857,8a2a727f099001103fe9d8e07f3a7a11:-924472306,9699f27f76900110120706ed8a5a11a9:-367510135</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-15 12:57:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>55b16f397de349719dfc0fe40ae8e001</sys_id>
+        <sys_metadata>8ac77efb2f900110fbf6b8e72799b6a7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>insert payroll in employee table</sys_name>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_parent display_value="">8bd1b2f72f900110fbf6b8e72799b62f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_scope_delete/>
+        <sys_update_name>sys_script_client_8ac77efb2f900110fbf6b8e72799b6a7</sys_update_name>
+        <sys_update_version display_value="sys_script_client_8ac77efb2f900110fbf6b8e72799b6a7">e3cffa732fd00110fbf6b8e72799b67b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-15 12:57:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

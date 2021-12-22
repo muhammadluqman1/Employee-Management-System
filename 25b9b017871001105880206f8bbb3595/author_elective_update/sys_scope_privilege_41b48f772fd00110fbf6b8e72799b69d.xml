@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>execute</operation>
+        <source_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-15 11:55:24</sys_created_on>
+        <sys_id>41b48f772fd00110fbf6b8e72799b69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GlideRecord.insert</sys_name>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_update_name>sys_scope_privilege_41b48f772fd00110fbf6b8e72799b69d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-15 11:55:24</sys_updated_on>
+        <target_name>GlideRecord.insert</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Management System">25b9b017871001105880206f8bbb3595</application>
+        <file_path/>
+        <instance_id>396ac553dbd7d3044f035d00cf9619b8</instance_id>
+        <instance_name>dev65905</instance_name>
+        <name>sys_scope_privilege_41b48f772fd00110fbf6b8e72799b69d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-12-15 11:55:24</sys_created_on><sys_id>41b48f772fd00110fbf6b8e72799b69d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.insert</sys_name><sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package><sys_policy/><sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope><sys_update_name>sys_scope_privilege_41b48f772fd00110fbf6b8e72799b69d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-12-15 11:55:24</sys_updated_on><target_name>GlideRecord.insert</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>-143797247</payload_hash>
+        <record_name>GlideRecord.insert</record_name>
+        <reverted_from/>
+        <source>c58c84362f273010fbf6b8e72799b6d4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-15 11:55:24</sys_created_on>
+        <sys_id>89b48f772fd00110fbf6b8e72799b69f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17dbdf27af10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-15 11:55:24</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>c1b48f773cd0011083d4140969300f9f</update_guid>
+        <update_guid_history>c1b48f773cd0011083d4140969300f9f:-143797247</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-15 12:57:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>0b971f5c375741a1a2077ea1d3afd5e9</sys_id>
+        <sys_metadata>41b48f772fd00110fbf6b8e72799b69d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GlideRecord.insert</sys_name>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_scope_delete/>
+        <sys_update_name>sys_scope_privilege_41b48f772fd00110fbf6b8e72799b69d</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_41b48f772fd00110fbf6b8e72799b69d">89b48f772fd00110fbf6b8e72799b69f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-15 12:57:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
