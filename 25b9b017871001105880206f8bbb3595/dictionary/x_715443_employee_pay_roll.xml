@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="pay roll" max_length="40" name="x_715443_employee_pay_roll" sizeclass="1" type="collection">
+        <element attributes="encode_utf8=false" label="Employee ID" max_length="32" name="employeeid" read_only="true" reference="x_715443_employee_employee" type="reference"/>
+        <element attributes="encode_utf8=false" label="Employee ID" mandatory="true" max_length="32" name="employee_ref" reference="x_715443_employee_employee" type="reference" use_dependent_field="true"/>
+        <element label="Final Amount" max_length="40" name="final_amount" read_only="true" type="float"/>
+        <element label="Missing Hours" mandatory="true" max_length="40" name="missing_hour" type="integer"/>
+        <element label="Missing Hours" mandatory="true" max_length="40" name="missing_hours" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Payroll ID" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="employeeid"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
