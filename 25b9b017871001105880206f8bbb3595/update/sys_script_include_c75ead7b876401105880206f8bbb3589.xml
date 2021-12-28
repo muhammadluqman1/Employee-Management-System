@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_715443_employee.GenerateSalary</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GenerateSalary</name>
+        <script><![CDATA[function GenerateSalary(miss_hours,employee_salary)
+{
+    var final_amount = 0;
+    if (miss_hours != 0) {
+        var total_hours = 160;
+        var per_hour_amount = employee_salary / 160;
+        var deduct_amount = miss_hours * per_hour_amount;
+        final_amount = employee_salary - deduct_amount;
+		return final_amount;
+    } else {
+        return employee_salary;
+    }
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-27 15:56:43</sys_created_on>
+        <sys_id>c75ead7b876401105880206f8bbb3589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GenerateSalary</sys_name>
+        <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+        <sys_update_name>sys_script_include_c75ead7b876401105880206f8bbb3589</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-27 15:56:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

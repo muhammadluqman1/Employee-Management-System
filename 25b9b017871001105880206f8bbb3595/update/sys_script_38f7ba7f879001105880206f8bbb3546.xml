@@ -32,17 +32,8 @@
     // 	finding payroll amount
 
     var miss_hours = current.missing_hours;
-    var final_amount = 0;
-    if (miss_hours != 0) {
-        var employee_salary = current.employee_salary;
-        var total_hours = 160;
-        var per_hour_amount = employee_salary / 160;
-        var deduct_amount = miss_hours * per_hour_amount;
-        final_amount = employee_salary - deduct_amount;
-    } else {
-        final_amount = current.employee_salary;
-    }
-
+	var employee_salary = current.employee_salary;
+	var final_amount=GenerateSalary(miss_hours,employee_salary);
 
     // adding record to payroll table
 
@@ -53,8 +44,9 @@
     payroll.insert();
 
     var employee = new GlideRecord('x_715443_employee_employee');
-    employee.query();
-    employee.next();
+	employee.get(current.sys_id);
+//     employee.query();
+//     employee.next();
     employee.setValue('payroll_id', payroll.sys_id);
     employee.update();
 
@@ -67,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>38f7ba7f879001105880206f8bbb3546</sys_id>
-        <sys_mod_count>73</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name>adding new field in  payroll</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
@@ -75,7 +67,7 @@
         <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
         <sys_update_name>sys_script_38f7ba7f879001105880206f8bbb3546</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-12-22 09:15:03</sys_updated_on>
+        <sys_updated_on>2021-12-28 07:48:11</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
