@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Salary" max_length="40" name="x_715443_employee_salary" sizeclass="1" type="collection">
+        <element label="Amount" mandatory="true" max_length="40" name="amount" type="integer"/>
+        <element label="Bonus" mandatory="true" max_length="40" name="bonus" type="integer"/>
+        <element attributes="encode_utf8=false" label="Job ID" mandatory="true" max_length="32" name="job_ref" reference="x_715443_employee_job_department" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Salary ID" mandatory="true" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="job_ref"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

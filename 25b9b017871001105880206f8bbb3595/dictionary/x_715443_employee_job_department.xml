@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Job Department" max_length="40" name="x_715443_employee_job_department" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Job Department" mandatory="true" max_length="40" name="job_department" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job Description" mandatory="true" max_length="40" name="job_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job Name" mandatory="true" max_length="40" name="job_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Job Department ID" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Salary Range" mandatory="true" max_length="40" name="salary_range" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

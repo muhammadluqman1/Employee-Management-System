@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Employee" max_length="40" name="x_715443_employee_employee" type="collection">
+    <element label="Employee" max_length="40" name="x_715443_employee_employee" sizeclass="1" type="collection">
+        <element label="Age" mandatory="true" max_length="40" name="age" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="email" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Employee Name" mandatory="true" max_length="40" name="employee_name" type="string"/>
         <element label="Employee Salary" mandatory="true" max_length="40" name="employee_salary" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="male" label="Gender" mandatory="true" max_length="40" name="gender" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="other" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element default="0" label="Misiing Hours" max_length="40" name="missing_hours" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Employee ID" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="payroll Id" max_length="32" name="payroll_id" read_only="true" reference="x_715443_employee_pay_roll" type="reference"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <index name="index">
             <element name="payroll_id"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
         </index>
     </element>
 </database>

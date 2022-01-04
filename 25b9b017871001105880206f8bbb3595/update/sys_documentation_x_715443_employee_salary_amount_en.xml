@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="amount" label="Amount" language="en" table="x_715443_employee_salary">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>amount</element>
+            <help/>
+            <hint/>
+            <label>Amount</label>
+            <language>en</language>
+            <name>x_715443_employee_salary</name>
+            <plural>Amounts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-04 08:48:14</sys_created_on>
+            <sys_id>2ea9d592877001105880206f8bbb35e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Amount</sys_name>
+            <sys_package display_value="Employee Management System" source="x_715443_employee">25b9b017871001105880206f8bbb3595</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Employee Management System">25b9b017871001105880206f8bbb3595</sys_scope>
+            <sys_update_name>sys_documentation_x_715443_employee_salary_amount_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-04 08:48:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="pay roll" max_length="40" name="x_715443_employee_pay_roll" type="collection">
+    <element label="pay roll" max_length="40" name="x_715443_employee_pay_roll" sizeclass="1" type="collection">
         <element attributes="encode_utf8=false" label="Employee ID" max_length="32" name="employeeid" read_only="true" reference="x_715443_employee_employee" type="reference"/>
         <element label="Final Amount" max_length="40" name="final_amount" read_only="true" type="float"/>
+        <element attributes="encode_utf8=false" label="Job ID" mandatory="true" max_length="32" name="job_ref" reference="x_715443_employee_job_department" type="reference"/>
+        <element attributes="encode_utf8=false" label="Leave ID" mandatory="true" max_length="32" name="leave_ref" reference="x_715443_employee_leave" type="reference"/>
+        <element label="Missing Hours" mandatory="true" max_length="40" name="missing_hour" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Payroll ID" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Salary ID" mandatory="true" max_length="32" name="salary_ref" reference="x_715443_employee_salary" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <index name="index">
+            <element name="job_ref"/>
+        </index>
+        <index name="index2">
+            <element name="leave_ref"/>
+        </index>
+        <index name="index3">
+            <element name="salary_ref"/>
+        </index>
+        <index name="index4">
             <element name="employeeid"/>
+        </index>
+        <index name="index5">
+            <element name="sys_class_name"/>
         </index>
     </element>
 </database>
